@@ -1,0 +1,17 @@
+#header-container {
+  height: 700px;
+  position: relative;
+  background-image: url(../../../images/dental-bed-bg.png);
+  background-size: cover;
+  background-position: bottom;
+}
+#header-container::after {
+  width: 30%;
+  content: "";
+  background-color: #3a4256;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 700px;
+  z-index: -5;
+}
