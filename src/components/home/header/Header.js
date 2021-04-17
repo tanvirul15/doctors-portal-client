@@ -1,12 +1,12 @@
 import React from "react";
 import BusinessInfo from "../businessInfo/BusinessInfo";
 import HeaderMain from "../headerMain/HeaderMain";
-import Navbar from "../navbar/Navbar";
+import Navbar from "../../shared/navbar/Navbar";
 import "./Header.css";
 
 const Header = () => {
   return (
-    <div id='header-container'>
+    <div id="header-container">
       <Navbar />
       <HeaderMain />
       <BusinessInfo />
