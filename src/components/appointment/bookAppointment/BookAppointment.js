@@ -46,7 +46,7 @@ const BookAppointment = ({ selectedDate }) => {
       totalSpace: 10,
     },
   ];
-  console.log(selectedDate.toDateString());
+
   return (
     <section>
       <div className="container">

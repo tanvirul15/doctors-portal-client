@@ -1,9 +1,45 @@
 import React from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCoffee,
+  faTasks,
+  faCalendarAlt,
+  faHospitalUser,
+  faPrescriptionBottle,
+  faCogs,
+} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import "./Sidebar.css";
 const Sidebar = () => {
   return (
-    <div>
-      <h1>Sidebar</h1>
+    <div className="sidebar">
+      <ul className="sidebar__list">
+        <Link to="/dashboard">
+          <li className="sidebar__list__item">
+            <FontAwesomeIcon icon={faTasks} /> &nbsp; Dashboard
+          </li>
+        </Link>
+        <Link to="/dashboard/appointment">
+          <li className="sidebar__list__item">
+            <FontAwesomeIcon icon={faCalendarAlt} /> &nbsp;Appointments
+          </li>
+        </Link>
+        <Link to="/dashboard/patient">
+          <li className="sidebar__list__item">
+            <FontAwesomeIcon icon={faHospitalUser} /> &nbsp;Patients
+          </li>
+        </Link>
+        <Link to="/">
+          <li className="sidebar__list__item">
+            <FontAwesomeIcon icon={faPrescriptionBottle} /> &nbsp; Prescription
+          </li>
+        </Link>
+        <Link to="/">
+          <li className="sidebar__list__item">
+            <FontAwesomeIcon icon={faCogs} /> &nbsp; Settings
+          </li>
+        </Link>
+      </ul>
     </div>
   );
 };

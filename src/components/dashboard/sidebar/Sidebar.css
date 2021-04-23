@@ -1,0 +1,25 @@
+.sidebar {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #19d3af, #10cfeb);
+  color: white;
+  padding: 20px 0;
+}
+.sidebar__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.sidebar__list a {
+  text-decoration: none;
+  color: white;
+}
+.sidebar__list__item {
+  padding: 7px 20px;
+  transition: all 0.5s;
+}
+.sidebar__list__item:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, #19dbb4, #14d4f1);
+}

@@ -7,7 +7,6 @@ import BookAppointment from "../bookAppointment/BookAppointment";
 const Appointment = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const handleDateChange = (date) => {
-    console.log(date);
     setSelectedDate(date);
   };
   return (
