@@ -22,6 +22,11 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faHospitalUser} /> &nbsp;Patients
           </li>
         </Link>
+        <Link to='/dashboard/addDoctor'>
+          <li className='sidebar__list__item'>
+            <FontAwesomeIcon icon={faHospitalUser} /> &nbsp;Add Doctor
+          </li>
+        </Link>
         <Link to='/dashboard'>
           <li className='sidebar__list__item'>
             <FontAwesomeIcon icon={faPrescriptionBottle} /> &nbsp; Prescription
