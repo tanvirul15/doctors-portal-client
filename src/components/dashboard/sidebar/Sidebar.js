@@ -34,6 +34,11 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faPrescriptionBottle} /> &nbsp; Prescription
           </li>
         </Link>
+        <Link to="/dashboard/addDoctor">
+          <li className="sidebar__list__item">
+            <FontAwesomeIcon icon={faPrescriptionBottle} /> &nbsp; Add a Doctor
+          </li>
+        </Link>
         <Link to="/">
           <li className="sidebar__list__item">
             <FontAwesomeIcon icon={faCogs} /> &nbsp; Settings

@@ -1,6 +1,7 @@
 import React, { createContext, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Appointment from "./components/appointment/appointment/Appointment";
+import AddDoctor from "./components/dashboard/addDoctor/AddDoctor";
 import AppointmentDashboard from "./components/dashboard/AppointmentDashboard/AppointmentDashboard";
 import Dashboard from "./components/dashboard/dashboard/Dashboard";
 
@@ -19,9 +20,13 @@ function App() {
           <Route path="/dashboard/appointment">
             <AppointmentDashboard />
           </Route>
+          <Route path="/dashboard/addDoctor">
+            <AddDoctor />
+          </Route>
           <Route path="/dashboard">
             <Dashboard />
           </Route>
+
           <Route path="/login">
             <Login />
           </Route>
