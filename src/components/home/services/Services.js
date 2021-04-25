@@ -20,12 +20,12 @@ const Services = () => {
     },
   ];
   return (
-    <section className="py-5">
-      <div className="container">
-        <div className="text-center">
-          <h5 className="text-brand">OUR SERVICES</h5>
+    <section id='services' className='py-5'>
+      <div className='container'>
+        <div className='text-center'>
+          <h5 className='text-brand'>OUR SERVICES</h5>
           <h2>Services We Provide</h2>
-          <div className="row my-5">
+          <div className='row my-5'>
             {ServiceData.map((serviceItem) => (
               <ServiceDetails serviceItem={serviceItem} />
             ))}

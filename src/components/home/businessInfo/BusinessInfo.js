@@ -25,8 +25,8 @@ const BusinessInfo = () => {
   return (
     <div className='container'>
       <section className='row'>
-        {infoData.map((info) => (
-          <Infocard info={info} />
+        {infoData.map((info, ind) => (
+          <Infocard key={ind} info={info} />
         ))}
       </section>
     </div>

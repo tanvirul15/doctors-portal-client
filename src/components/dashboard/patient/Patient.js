@@ -1,19 +1,9 @@
 import React from "react";
 
-// age: "25"
-// created: "2021-04-18T04:54:03.337Z"
-// date: "2021-04-21T18:00:00.000Z"
-// email: "islamtanvirul15@gmail.com"
-// gender: "Male"
-// name: "Tanvir"
-// phone: "01673055734"
-// service: "Teeth Orthodontics"
-// weight: "65"
-// _id: "607bbb6bc9d8511084c2f160"
-const AppointmentsByDate = ({ appointments }) => {
+const Patient = ({ appointments }) => {
   return (
     <div>
-      <h2>No of Appointment {appointments.length}</h2>
+      <h2>No of Patients {appointments.length}</h2>
       <table className='table table-striped'>
         <thead>
           <tr>
@@ -36,4 +26,15 @@ const AppointmentsByDate = ({ appointments }) => {
   );
 };
 
-export default AppointmentsByDate;
+export default Patient;
+
+// age: "25"
+// created: "2021-04-18T04:54:03.337Z"
+// date: "2021-04-21T18:00:00.000Z"
+// email: "islamtanvirul15@gmail.com"
+// gender: "Male"
+// name: "Tanvir"
+// phone: "01673055734"
+// service: "Teeth Orthodontics"
+// weight: "65"
+// _id: "607bbb6bc9d8511084c2f160"

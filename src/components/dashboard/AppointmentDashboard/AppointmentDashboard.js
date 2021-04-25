@@ -27,19 +27,21 @@ const AppointmentDashboard = () => {
     })
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         setAppointments(data);
       });
   }, [selectedDate]);
   return (
     <section>
-      <div style={containerStyle} className="row">
-        <div className="col-md-3">
+      <div style={containerStyle} className='row'>
+        <div className='col-md-3'>
           <Sidebar />
         </div>
-        <div className="col-md-4">
+        <div className='col-md-4'>
+          <h3 className='text-brand mb-3 mt-2'>Appointment</h3>
           <Calendar onChange={handleDateChange} value={new Date()} />
         </div>
-        <div className="col-md-5">
+        <div className='col-md-5 p-5'>
           <AppointmentsByDate appointments={appointments} />
         </div>
       </div>
